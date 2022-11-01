@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="multipleComponentsPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C04-S8-map">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo1" translatesAutoresizingMaskIntoConstraints="NO" id="aiQ-mQ-uM2">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="763"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiU-rw-Jvt">
+                                        <rect key="frame" x="9" y="140" width="53" height="52"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="a1g-Zo-fLY"/>
+                                            <constraint firstAttribute="width" constant="53" id="ke1-Xf-3pS"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSp-zM-EUH">
+                                        <rect key="frame" x="56" y="210" width="53" height="52"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="Fvw-Xq-VEK"/>
+                                            <constraint firstAttribute="width" constant="53" id="Thj-kd-WY9"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EH1-DO-PUl">
+                                        <rect key="frame" x="15" y="280" width="53" height="52"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="ThH-Vd-jmF"/>
+                                            <constraint firstAttribute="height" constant="52" id="bHz-00-6tV"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="r6E-Ch-Xww"/>
+                                            <constraint firstAttribute="width" constant="53" id="wy7-Qq-2hC"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstItem="EH1-DO-PUl" firstAttribute="leading" secondItem="C04-S8-map" secondAttribute="leading" constant="15" id="3iS-h0-Nh3"/>
+                                    <constraint firstItem="jiU-rw-Jvt" firstAttribute="top" secondItem="C04-S8-map" secondAttribute="top" constant="140" id="6jy-Xn-U3q"/>
+                                    <constraint firstItem="MSp-zM-EUH" firstAttribute="leading" secondItem="C04-S8-map" secondAttribute="leading" constant="56" id="GTx-yb-jHm"/>
+                                    <constraint firstItem="EH1-DO-PUl" firstAttribute="leading" secondItem="C04-S8-map" secondAttribute="leading" constant="15" id="INH-8k-6hr"/>
+                                    <constraint firstItem="jiU-rw-Jvt" firstAttribute="leading" secondItem="C04-S8-map" secondAttribute="leading" constant="9" id="bo1-TT-cdT"/>
+                                    <constraint firstItem="MSp-zM-EUH" firstAttribute="top" secondItem="C04-S8-map" secondAttribute="top" constant="210" id="fAp-1G-yN0"/>
+                                    <constraint firstItem="EH1-DO-PUl" firstAttribute="top" secondItem="C04-S8-map" secondAttribute="top" constant="280" id="ibr-bM-cjs"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UAh-LT-wc8">
+                                <rect key="frame" x="0.0" y="87" width="390" height="680"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drp-iI-nQq">
+                                        <rect key="frame" x="332" y="8" width="50" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.91679966339999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7D1-jH-Al0"/>
+                                            <constraint firstAttribute="width" constant="50" id="f9w-7Q-det"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="680" id="UGf-CO-ARx"/>
+                                    <constraint firstItem="drp-iI-nQq" firstAttribute="top" secondItem="UAh-LT-wc8" secondAttribute="top" constant="8" id="Wqp-nA-6ec"/>
+                                    <constraint firstAttribute="trailing" secondItem="drp-iI-nQq" secondAttribute="trailing" constant="8" id="pCP-8T-QAJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C04-S8-map" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9fj-f3-IQT"/>
+                            <constraint firstItem="UAh-LT-wc8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="EDP-nx-eGz"/>
+                            <constraint firstItem="UAh-LT-wc8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ICx-cd-a78"/>
+                            <constraint firstItem="C04-S8-map" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="L6d-ID-PGL"/>
+                            <constraint firstItem="UAh-LT-wc8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d4b-ul-h7e"/>
+                            <constraint firstItem="C04-S8-map" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dd9-Ax-F29"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C04-S8-map" secondAttribute="bottom" id="gPB-oO-lgt"/>
+                            <constraint firstItem="C04-S8-map" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hK1-SV-npY"/>
+                            <constraint firstItem="C04-S8-map" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pSo-aT-Hva"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="componentsView" destination="C04-S8-map" id="Q1b-Hg-vUi"/>
+                        <outlet property="topView" destination="UAh-LT-wc8" id="Zyj-Tr-qrq"/>
+                        <outlet property="wallDesign1" destination="jiU-rw-Jvt" id="Byb-eb-15i"/>
+                        <outlet property="wallDesign2" destination="MSp-zM-EUH" id="39A-cX-Ubv"/>
+                        <outlet property="wallDesign3" destination="EH1-DO-PUl" id="N0Z-oD-UWw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.692307692307693" y="18.48341232227488"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo1" width="1600" height="2403"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
